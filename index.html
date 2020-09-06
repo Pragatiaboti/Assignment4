@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Katti Batti Restro</title>
+    <style type="text/css">
+    *{
+      text-align: center;
+      font-family: arial;
+      background-color : #d1eeff;
+      margin-left :50px;
+      margin-right : 50px;
+    }
+    
+    .container{
+      margin-top:50px;
+      padding: 10px;
+      width:500px;
+      position: absolute;
+      left: 50%;
+      top: 70%;
+      transform: translate(-50%, -50%);
+      border:1px solid #ccc;
+      border-radius:10px;
+      background:white;
+    }
+    h3,h1{
+      margin-top: 50px;
+    }
+    
+    select {
+     width: 70%;
+     padding: 15px;
+     margin: 5px 0 22px 0;
+    
+     border: none;
+     background: #f7f7f7;
+	 
+    }
+    .header{
+        background-color : #faaa39;
+    }
+    </style>
+  </head>
+  <body>
+    <div class = "header">
+         <h1>Welcome To Katti Batti Cafe</h1>
+    </div>  
+   
+    <div>
+      <hr>
+          <h2 style="text-align: center;">What you would like to have, Please Select</h2>
+          <div class="input">
+            <select name="menulist" id="menulist"></select>
+          </div>
+          <div class="container" id = "Det" >
+              <h3 style="text-align: center;">Dish Details</h3>
+              <p>Short name:</p>
+              <p class="short__name"></p>
+              <p>Name :</p>
+              <p class="item_name"></p>
+              <p>Description:</p>
+              <p class="desc"></p>
+              <p>Price :</p>
+              <div class="col-9 prices">
+                  <p class="small_dish"></p>
+                  <p class="large_dish"></p>
+              </div>
+            </div>
+        </div>
+    <!-- bootstrap files  -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
